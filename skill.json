@@ -1,0 +1,35 @@
+{
+  "name": "genpark-autonomous-task-decomposition-delegation-planner-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-step autonomous agent workflow decomposition & task delegation planner.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "task-decomposition",
+    "delegation-planner",
+    "multi-agent-planning",
+    "workflow-graph",
+    "ph-august19"
+  ],
+  "inputs": {
+    "high_level_goal": {
+      "type": "string"
+    },
+    "available_subagents": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "execution_graph_steps": {
+      "type": "array"
+    },
+    "estimated_duration_seconds": {
+      "type": "integer"
+    },
+    "parallel_executable": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
